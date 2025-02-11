@@ -8,10 +8,10 @@ if input_string[0].isdigit():
 elif " " in input_string:
     print(False)
 elif input_string == "_":
+    print(True)
+elif input_string.count('_')  == len(input_string):
     print(False)
 elif any(char in string.punctuation and char != "_" for char in input_string):
-    print(False)
-elif input_string.count('_') > 1:
     print(False)
 elif keyword.iskeyword(input_string):
     print(False)
