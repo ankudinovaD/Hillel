@@ -2,7 +2,7 @@ input_number = int(input('Input your number: '))
 
 while input_number > 9:
 
-    numbers = [int(digit) for digit in str(input_number)]
+    numbers = [int(number) for number in str(input_number)]
 
     output_number = 1
 
