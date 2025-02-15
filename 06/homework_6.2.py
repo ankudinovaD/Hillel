@@ -12,7 +12,7 @@ day_word = ''
 for key, value in dict_name.items():
     if days % 100 == key or days % 10 == key:
         day_word = value
-
+        break
 
 hours, minutes, seconds = str(hours).zfill(2), str(minutes).zfill(2), str(seconds).zfill(2)
 
