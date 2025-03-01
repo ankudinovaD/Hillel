@@ -1,14 +1,11 @@
 def first_word(text):
     """ Пошук першого слова """
 
-    my_string = text.replace(',', ' ').replace('.', ' ').split()
+    my_string = text.replace(',', ' ').replace('.', ' ').strip()
 
-    first_word = ''
+    words = my_string.split()
 
-    for items in my_string:
-        if items.isalnum() or "'" in items:
-            first_word = items
-            break
+    first_word = words[0].strip("'")
 
     return first_word
 
@@ -19,4 +16,5 @@ assert first_word("don't touch it") == "don't", 'Test3'
 assert first_word(".., and so on ...") == "and", 'Test4'
 assert first_word("hi") == "hi", 'Test5'
 assert first_word("Hello.World") == "Hello", 'Test6'
+assert first_word("'touch it'") == "touch", 'Test7'
 print('OK')
