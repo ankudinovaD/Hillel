@@ -23,7 +23,7 @@ def delete_html_tags(html_file, result_file='cleaned.txt'):
                 cleaned_lines.append(cleaned_str)
 
     with codecs.open(result_file, 'w', encoding='utf-8') as outfile:
-        outfile.write('\n'.join(cleaned_lines) + '\n')
+        outfile.write('\n'.join(cleaned_lines))
 
     with codecs.open(result_file, 'r', encoding='utf-8') as result:
         print(result.read())
