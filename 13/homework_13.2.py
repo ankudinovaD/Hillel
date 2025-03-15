@@ -35,6 +35,7 @@ class Counter:
    def get_current(self):
        return self.current
 
+
 counter = Counter()
 counter.set_current(7)
 counter.step_up()
