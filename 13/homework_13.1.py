@@ -7,7 +7,8 @@ class Human:
         self.last_name = last_name
 
     def __str__(self):
-        return f"{self.gender}, {self.age},  {self.first_name} , {self.last_name}"
+        return f"{self.gender}, {self.age}, {self.first_name}, {self.last_name}"
+
 
 class Student(Human):
 
@@ -17,6 +18,7 @@ class Student(Human):
 
     def __str__(self):
         return super().__str__() + f", {self.record_book}"
+
 
 class Group:
 
@@ -38,6 +40,7 @@ class Group:
     def __str__(self):
         all_students = '\n'.join(str(student) for student in self.group)
         return f'Number: {self.number}\n{all_students}'
+
 
 st1 = Student('Male', 30, 'Steve', 'Jobs', 'AN142')
 st2 = Student('Female', 25, 'Liza', 'Taylor', 'AN145')
