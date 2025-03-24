@@ -63,8 +63,6 @@ class Main(tk.Frame):
         self.db = db
         self.setup_treeview()
 
-        self.db = db
-
         IMG_DIR = os.path.join(os.path.dirname(__file__), "..", "image")
 
         self.add_img = tk.PhotoImage(file=os.path.join(IMG_DIR, "add.png")).subsample(2, 2)

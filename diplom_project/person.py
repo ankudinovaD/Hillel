@@ -100,7 +100,3 @@ class Person:
 
 
         return f"{self.first_name} {self.last_name} {self.middle_name}, {age_str}, {gender_str}. {birth_info}. {death_info}\n\n".strip()
-
-    def to_line(self):
-        return f"{self.first_name},{self.last_name},{self.middle_name},{self.birth_date.strftime('%d.%m.%Y') if self.birth_date else ''},{self.death_date.strftime('%d.%m.%Y') if self.death_date else ''},{self.gender}\n"
-
